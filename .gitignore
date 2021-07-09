@@ -1,2 +1,3 @@
 #Ignored files
 .venv
+geckodriver.log
