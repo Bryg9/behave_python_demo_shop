@@ -13,7 +13,11 @@
 ```
 * Install required libraries:
 ```
+  # basic command:
   $ pip install -r requirements.txt
+
+  # or you can use:
+  $ make deps
 ```
 * Check your installation:
 ```
@@ -23,3 +27,5 @@
 ```
   $ sudo apt install firefox-geckodriver
 ```
+Remember that the eckodriver needs to be in PATH.
+Check out if installed geckodriver is in /usr/bin or /usr/local/bin directory.
