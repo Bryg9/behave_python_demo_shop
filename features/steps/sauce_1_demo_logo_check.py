@@ -1,4 +1,4 @@
-from behave import *
+from behave import given, when, then
 from selenium import webdriver
 from time import sleep
 
@@ -20,7 +20,7 @@ def openSauceDemoPage(context):
 
 @then('verify if the logo is present on main page')
 def verifyLogo(context):
-    status = context.driver.find_element_by_xpath('//div[@class="bot_column"]').is_displayed()
+    status = context.driver.find_element_by_xpath('//div[@class="bot_column"]').is_displayed()# noqa
     assert status is True
     sleep(3)
 
