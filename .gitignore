@@ -1,3 +1,4 @@
 #Ignored files
 .venv
 geckodriver.log
+__pycache__
