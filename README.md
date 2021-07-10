@@ -18,7 +18,7 @@ Tests are checking visibility of logo on main page, and testing ordering process
   # deactivation if needed:
   $ deactivate
 ```
-* Install required libraries:
+* Install required libraries on active .venv environment:
 ```
   # basic command:
   $ pip install -r requirements.txt
