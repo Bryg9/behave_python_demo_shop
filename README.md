@@ -25,7 +25,7 @@
 ```
 * Install geckodriver:
 ```
+  # Remember that the geckodriver needs to be in PATH.
+  # Check out if installed geckodriver is in /usr/bin or /usr/local/bin directory.
   $ sudo apt install firefox-geckodriver
 ```
-Remember that the geckodriver needs to be in PATH.
-Check out if installed geckodriver is in /usr/bin or /usr/local/bin directory.
