@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.8.7"
+  - "3.6"
 addons:
   firefox: "89.0"
 before_install:
