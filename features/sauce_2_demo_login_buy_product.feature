@@ -23,7 +23,5 @@ Feature: Log in online shop and buy a product
 
     Examples:
     | username | password |
-    | john123 | strongPWD |
     | standard_user | secret_sauce |
     | problem_user | secret_sauce |
-    | tom11 | pwd1234 |
