@@ -22,11 +22,25 @@ def openSauceDemoPage(context):
 def logIn(context):
     loginForm = context.driver.find_element_by_xpath('//input[@placeholder="Username"]')# noqa
     loginForm.click()
-    loginForm.send_keys("standard_user")
+    loginForm.send_keys('standard_user')
 
     passwordForm = context.driver.find_element_by_xpath('//input[@placeholder="Password"]')# noqa
     passwordForm.click()
     passwordForm.send_keys('secret_sauce')
+
+    btnLogin = context.driver.find_element_by_id("login-button").click()# noqa
+    sleep(3)
+
+
+@then('I log into the online shop with "{user}" and pass "{pwd}"')
+def logInOutline(context, user, pwd):
+    loginForm = context.driver.find_element_by_xpath('//input[@placeholder="Username"]')# noqa
+    loginForm.click()
+    loginForm.send_keys(user)
+
+    passwordForm = context.driver.find_element_by_xpath('//input[@placeholder="Password"]')# noqa
+    passwordForm.click()
+    passwordForm.send_keys(pwd)
 
     btnLogin = context.driver.find_element_by_id("login-button").click()# noqa
     sleep(3)
@@ -87,6 +101,19 @@ def logOut(context):
     logoutButton = context.driver.find_element_by_xpath('//a[@id="logout_sidebar_link"]').click()# noqa
     btnLogin = context.driver.find_element_by_id("login-button").is_displayed()# noqa
     sleep(2)
+
+
+@then('check if login success')
+def loginSucces(context):
+    try:
+        afterLogin = context.driver.find_element_by_xpath('//span[text()="Products"]')# noqa
+        afterLogin_text = afterLogin.text
+    except:# noqa
+        context.driver.close()
+        assert False, "Test failed, because of wrong credentials !!!"
+    if afterLogin_text == "Products":
+        context.driver.close()
+        assert True, "Test passed, credentials are correct !!!"
 
 
 @then('I close browser')
