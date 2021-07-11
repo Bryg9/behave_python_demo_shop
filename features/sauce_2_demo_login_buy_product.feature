@@ -1,5 +1,6 @@
 Feature: Log in online shop and buy a product
 
+
   Scenario: Buying a Sauce Labs Bolt T-Shirt
     Given I open the browser
     And open saucedemo.com page
@@ -9,6 +10,7 @@ Feature: Log in online shop and buy a product
     Then I place an order
     And I log out
     And I close browser
+
 
   @multiple
   Scenario Outline: Login with multiple parameters
