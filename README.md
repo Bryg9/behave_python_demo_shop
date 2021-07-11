@@ -43,11 +43,15 @@ Tests are checking visibility of logo on main page, and testing ordering process
   $ git clone https://github.com/<YOUR_GITHUB_USER_NAME>/behave_python_demo_shop.git
 ```
 ## Run tests and check code syntax:
-* Use Makefile command:
+* Use Makefile command to run all tests:
 ```
-  # to run tests
+  # to run all tests
   $ make test
 
   # to check syntax
   $ make lint
+```
+* To run only test with credentials checking, use:
+```
+  $ behave --tags=multiple
 ```
