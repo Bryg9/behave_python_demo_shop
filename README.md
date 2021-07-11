@@ -38,9 +38,9 @@ Tests are checking visibility of logo on main page, and testing ordering process
   # Check out if installed geckodriver is in /usr/bin or /usr/local/bin directory.
   $ sudo apt install firefox-geckodriver
 ```
-* Clone repository
+* Fork this repository and clone from your GitHub:
 ```
-  $ git clone https://github.com/Bryg9/behave_python_demo_shop.git
+  $ git clone https://github.com/<YOUR_GITHUB_USER_NAME>/behave_python_demo_shop.git
 ```
 ## Run tests and check code syntax:
 * Use Makefile command:
