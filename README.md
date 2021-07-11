@@ -3,7 +3,7 @@ This simple project includes automation tests of the online demo shop: [saucedem
 
 The structure of the project was created with using **Behave** (behaviour-driven development technique) and Python.  
 
-Tests are checking visibility of logo on main page, and testing ordering process (e2e testing).
+Tests are checking visibility of logo on main page, testing ordering process (e2e testing), and checking login credentials.
 
 # How to run this project on Ubuntu 20.04.1
 ## Prepare your environment:
